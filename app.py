@@ -67,7 +67,7 @@ app.layout = html.Div(children=[
                Input('pick-a-size', 'value')])
 def radio_results(type_you_picked, size_you_picked):
     image_you_chose=f'{type_you_picked}-{size_you_picked}.jpg'
-    return html.Img(src=app.get_asset_url(image_you_chose), style={'width': 'auto', 'height': 'auto'}),
+    return html.Img(src=app.get_asset_url(image_you_chose), style={'width': '100', 'height': '75'}),
 
 ############ Deploy
 if __name__ == '__main__':
